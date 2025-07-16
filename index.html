@@ -161,7 +161,13 @@
         max-width: 900px;
         margin: 0 auto;
       }
-
+      .hero-content-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 3rem;
+      }
       .hero h1 {
         font-size: 3.8rem;
         font-weight: 900;
@@ -204,10 +210,10 @@
         display: inline-flex;
         align-items: center;
         gap: 10px;
-        margin-bottom: 3rem;
         font-size: 1rem;
         box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
         font-weight: 600;
+        text-decoration-line: none;
       }
 
       .badge-icon {
@@ -714,6 +720,10 @@
           <li><a href="#crisis-prevention">Crisis Prevention</a></li>
           <li><a href="#demo">Demo</a></li>
           <li>
+            <a href="https://reserveiq-platform-gateway.vercel.app">Sign Up</a>
+          </li>
+
+          <li>
             <a href="mailto:info@reserveiq.net" class="cta-button">Get Demo</a>
           </li>
         </ul>
@@ -741,9 +751,17 @@
           </p>
 
           <!-- Board Member Badge -->
-          <div class="board-member-badge">
-            <span class="badge-icon">🏢</span>
-            <strong>Built Specifically for Board Members</strong>
+          <div class="hero-content-buttons">
+            <div class="board-member-badge">
+              <span class="badge-icon">🏢</span>
+              <strong>Built Specifically for Board Members</strong>
+            </div>
+            <a
+              href="https://reserveiq-platform-gateway.vercel.app"
+              class="board-member-badge"
+            >
+              <strong>Sign up</strong>
+            </a>
           </div>
 
           <div class="stats">
