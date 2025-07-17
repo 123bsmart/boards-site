@@ -1331,6 +1331,8 @@
 
         const form = e.target;
         const data = {
+          siteName: 'Boards Site',
+          form_type: 'Get Custom Demo',
           name: form[0].value,
           email: form[1].value,
           building: form[2].value,
@@ -1339,7 +1341,7 @@
 
         try {
           const response = await fetch(
-            'http://localhost:5001/api/resend/send-contact-email',
+            'https://api.reserveiq.dev/api/resend/send-email',
             {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
